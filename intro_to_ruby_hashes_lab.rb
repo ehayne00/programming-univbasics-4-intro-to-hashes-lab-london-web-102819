@@ -26,5 +26,6 @@ end
 
 def update_counting_hash(hash, key)
   hash = {:count => 5}
-  hash[:count]+=1
+  new_value = hash[:count]+=1
+  return hash = {:count => new_value}
 end
