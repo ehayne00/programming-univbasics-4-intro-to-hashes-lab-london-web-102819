@@ -26,10 +26,9 @@ end
 
 def update_counting_hash(hash, key)
   hash = {key => value}
-  if hash[key]
-  hash[key] +=1
+  if hash[:count]
+  hash[:count] +=1
 else
-  hash[key] = 1
+  hash[:count] = 1
  end
- return hash
 end
