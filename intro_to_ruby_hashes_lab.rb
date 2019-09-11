@@ -25,11 +25,11 @@ def read_from_hash(hash, key)
 end
 
 def update_counting_hash(hash, key)
-  hash = {:count => 5}
-  if hash[:count]
-  hash[:count] +=1
+  hash = {key => value}
+  if hash[key]
+  hash[key] +=1
 else
-  hash[:count] = 1
+  hash[key] = 1
  end
  return hash
 end
