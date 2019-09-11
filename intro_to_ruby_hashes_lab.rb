@@ -25,9 +25,9 @@ def read_from_hash(hash, key)
 end
 
 def update_counting_hash(hash, key)
-  if update_counting_hash[:count]
-  return update_counting_hash[:count] +=1
+  if hash[:count]
+  return hash[:count] +=1
 else
-  update_counting_hash[:count] = 1
+  hash[:count] = 1
  end
 end
